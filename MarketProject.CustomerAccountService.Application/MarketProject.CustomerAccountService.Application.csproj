@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarketProject.CustomerAccountService.Domain\MarketProject.CustomerAccountService.Domain.csproj" />
+    <ProjectReference Include="..\MarketProject.CustomerAccountService.Persistence\MarketProject.CustomerAccountService.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
