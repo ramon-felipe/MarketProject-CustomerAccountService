@@ -1,5 +1,4 @@
-﻿
-namespace MarketProject.CustomerAccountService.Domain
+﻿namespace MarketProject.CustomerAccountService.Common
 {
     public class Result
     {
@@ -45,7 +44,7 @@ namespace MarketProject.CustomerAccountService.Domain
         }
 
         /// <summary>
-        /// It process a action and returns <see cref="Success"/> or <see cref="Failure"/>
+        /// It process an action and returns <see cref="Success"/> or <see cref="Failure"/>
         /// </summary>
         /// <param name="act"></param>
         /// <returns></returns>
@@ -71,24 +70,38 @@ namespace MarketProject.CustomerAccountService.Domain
         /// <param name="method"></param>
         /// <param name="args"></param>
         /// <returns></returns>
-        public static Result<Tout> Process<Tout>(Delegate method, params object[] args)
+        public static Result<Tout> Process<Tout>(Delegate method, params object[] args) where Tout : notnull
         {
             try
             {
-                var result = (Tout)method.DynamicInvoke(args);
+                if (method is null)
+                    throw new InvalidOperationException();
 
-                return Success(result);
+                var result = method.DynamicInvoke(args);
+
+                if (result is null)
+                    throw new InvalidOperationException();
+
+                var res = (Tout)result;
+
+                return Success(res);
             }
             catch (Exception e)
             {
-                var error = ResultError.Create(e.InnerException?.Message, e.InnerException);
+                var error = ResultError.Create();
+
+                if (e.InnerException is not null)
+                    error = ResultError.Create(e.InnerException.Message, e.InnerException);
+                
                 return Failure<Tout>(error);
             }
         }
     }
+
     public class Result<T> : Result
     {
         private readonly T _value;
+
         public T Value
         {
             get

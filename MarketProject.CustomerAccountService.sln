@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketProject.CustomerAccou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketProject.CustomerAccountService.Persistence", "MarketProject.CustomerAccountService.Persistence\MarketProject.CustomerAccountService.Persistence.csproj", "{EB576EB4-425C-4EF6-A41F-62CF1EDAA5AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketProject.CustomerAccountService.Tests", "MarketProject.CustomerAccountService.Tests\MarketProject.CustomerAccountService.Tests.csproj", "{66E7CC2C-1A2F-4948-AA58-D89E7E9F14EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketProject.CustomerAccountService.Tests", "MarketProject.CustomerAccountService.Tests\MarketProject.CustomerAccountService.Tests.csproj", "{66E7CC2C-1A2F-4948-AA58-D89E7E9F14EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketProject.CustomerAccountService.Common", "MarketProject.CustomerAccountService.Common\MarketProject.CustomerAccountService.Common.csproj", "{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{66E7CC2C-1A2F-4948-AA58-D89E7E9F14EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66E7CC2C-1A2F-4948-AA58-D89E7E9F14EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66E7CC2C-1A2F-4948-AA58-D89E7E9F14EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
