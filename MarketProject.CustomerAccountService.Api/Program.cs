@@ -10,6 +10,8 @@ using MarketProject.CustomerAccountService.Persistence.CQRS.Queries;
 using MarketProject.CustomerAccountService.Persistence.CQRS.Queries.Interfaces;
 using MarketProject.CustomerAccountService.Persistence.Repositories;
 using MarketProject.CustomerAccountService.Persistence.Repositories.Interfaces;
+using MarketProject.CustomerAccountService.Services.MessageService;
+using MarketProject.CustomerAccountService.Services.MessageService.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,8 @@ builder.Services.AddScoped<IGetCustomerAccountQuery, GetCustomerAccountQuery>();
 builder.Services.AddScoped<IGetCustomersAccountsQuery, GetCustomersAccountsQuery>();
 builder.Services.AddScoped<IGetLastCostumerAccountQuery, GetLastCostumerAccountQuery>();
 builder.Services.AddScoped<ICreateCustomerAccountCommand, CreateCustomerAccountCommand>();
+
+builder.Services.AddScoped<IMessageService, RabbitMqService>();
 
 builder.Services.AddAutoMapper(typeof(CustomerAccountProfile));
 

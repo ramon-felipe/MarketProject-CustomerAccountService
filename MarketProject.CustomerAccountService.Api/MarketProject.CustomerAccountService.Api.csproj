@@ -19,6 +19,7 @@
     <ProjectReference Include="..\MarketProject.CustomerAccountService.Application\MarketProject.CustomerAccountService.Application.csproj" />
     <ProjectReference Include="..\MarketProject.CustomerAccountService.Domain\MarketProject.CustomerAccountService.Domain.csproj" />
     <ProjectReference Include="..\MarketProject.CustomerAccountService.Persistence\MarketProject.CustomerAccountService.Persistence.csproj" />
+    <ProjectReference Include="..\MarketProject.CustomerAccountService.Services\MarketProject.CustomerAccountService.Services.csproj" />
   </ItemGroup>
 
 </Project>

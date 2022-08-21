@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketProject.CustomerAccou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketProject.CustomerAccountService.Common", "MarketProject.CustomerAccountService.Common\MarketProject.CustomerAccountService.Common.csproj", "{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketProject.CustomerAccountService.Services", "MarketProject.CustomerAccountService.Services\MarketProject.CustomerAccountService.Services.csproj", "{25CB1936-6252-442D-B696-B02531DA7643}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D545751-98AD-473A-87AD-FA3EEFD4EEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CB1936-6252-442D-B696-B02531DA7643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CB1936-6252-442D-B696-B02531DA7643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CB1936-6252-442D-B696-B02531DA7643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CB1936-6252-442D-B696-B02531DA7643}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
